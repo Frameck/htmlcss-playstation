@@ -8,7 +8,7 @@
     --bg-dark-1: #1f1f1f;
     --bg-dark-2: #161c3b;
     --bg-blue: #00439c;
-    --bg-beige: #bebcbb;
+    --bg-lightgrey: #bebcbb;
     --bg-white: #ffffff;
     --text-black: #1f1f1f;
     --text-blue: #2d64e6;
@@ -79,16 +79,24 @@ header nav a {
 
 .section-text {
     font-size: var(--title-h5);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .section-small-title {
     font-size: var(--title-h3);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .text-blue {
     color: var(--text-blue);
+}
+
+.bg-dark {
+    background-color: var(--bg-dark-1);
+}
+
+.bg-lightgrey {
+    background-color: var(--bg-lightgrey);
 }
 
 .btn-red {
@@ -107,10 +115,18 @@ header nav a {
     border-bottom: 1px solid var(--text-lightblue)!important;
 }
 
-.thumb-card {
+.flex-center-all {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.card-body {
+    padding-left: 0!important;
+}
+
+.border-none {
+    border: none!important;
 }
