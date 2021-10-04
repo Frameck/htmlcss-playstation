@@ -18,11 +18,17 @@
     --title-h2: 2.5rem;
     --title-h3: 2.3rem;
     --title-h4: 1.3rem;
-    --title-h5: .9rem;
+    --title-h5-small: .9rem;
 }
 
 body {
     font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    z-index: 99;
+    top: 0;
 }
 
 header nav:first-child {
@@ -45,6 +51,19 @@ header nav a {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
     background-size: cover;
     height: 600px;
+}
+
+footer a {
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+footer ul li {
+    margin-bottom: 7px;
+}
+
+footer {
+    margin-bottom: 0!important;
 }
 
 
@@ -78,7 +97,7 @@ header nav a {
 }
 
 .section-text {
-    font-size: var(--title-h5);
+    font-size: var(--title-h5-small);
     margin-bottom: 30px;
 }
 
@@ -101,6 +120,10 @@ header nav a {
 
 .bg-dark-blue {
     background-color: var(--bg-dark-blue);
+}
+
+.bg-blue {
+    background-color: var(--bg-blue);
 }
 
 .bg-lightgrey {
@@ -137,4 +160,8 @@ header nav a {
 
 .border-none {
     border: none!important;
+}
+
+.list-style-none {
+    list-style: none;
 }
