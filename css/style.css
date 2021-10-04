@@ -1,3 +1,4 @@
+/* theme colors and font sizes */
 :root {
     --btn-red: #cd3d0f; 
     --btn-blue: #2d64e6; 
@@ -20,6 +21,9 @@
     --title-h4: 1.3rem;
     --title-h5-small: .9rem;
 }
+
+
+/* selectors */
 
 body {
     font-family: Arial, sans-serif;
@@ -110,10 +114,6 @@ footer {
     color: var(--text-blue);
 }
 
-.text-grey {
-    color: var(--text-grey);
-}
-
 .bg-dark {
     background-color: var(--bg-dark);
 }
@@ -164,4 +164,42 @@ footer {
 
 .list-style-none {
     list-style: none;
+}
+
+
+/* extras */
+
+header li:hover a {
+    color: var(--text-lightblue)!important;
+}
+
+.btn-red:hover, .btn-light:hover {
+    outline: 2px solid var(--btn-dark);
+    outline-offset: -3px;
+}
+
+.btn-secondary:hover, .btn-blue:hover {
+    outline: 2px solid var(--btn-white);
+    outline-offset: -3px;
+}
+
+.translate-on-hover {
+    transition: all .3s;
+}
+
+.translate-on-hover:hover {
+    transform: translateY(-10px);
+}
+
+.element-outline {
+    outline: 2px solid var(--text-blue);
+    outline-offset: 1px;
+}
+
+.opacity-75 {
+    transition: all .2s;
+}
+
+.opacity-75:hover {
+    opacity: 1!important;
 }
